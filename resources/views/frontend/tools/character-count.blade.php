@@ -11,8 +11,6 @@
                 <button data-type="facebook" class="content-type-btn bg-gray-200 text-gray-900 px-3 py-1 rounded-lg hover:bg-gray-300 active:bg-blue-600 active:text-white">Facebook</button>
                 <button data-type="instagram" class="content-type-btn bg-gray-200 text-gray-900 px-3 py-1 rounded-lg hover:bg-gray-300 active:bg-blue-600 active:text-white">Instagram</button>
                 <button data-type="x" class="content-type-btn bg-gray-200 text-gray-900 px-3 py-1 rounded-lg hover:bg-gray-300 active:bg-blue-600 active:text-white">X</button>
-       
-                  
             </div>
         </div>
         <div class="relative flex flex-col sm:flex-row gap-4 mb-6">
