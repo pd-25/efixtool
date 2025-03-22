@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ /* Override Tailwind's font-sans to use Inter for body text */
+ .font-sans {
+    font-family: 'Inter', sans-serif;
+}
+/* Apply Poppins to headings */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+/* Gradient Background */
+.bg-gradient-to-b {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #DCE9FF 50%, #FFFFFF 100%);
+}
+/* Gradient Flow for Heading */
+.animate-gradient-flow {
+    background-size: 200% 200%;
+    animation: gradientFlow 6s linear infinite;
+}
+@keyframes gradientFlow {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 200%; }
+}
+/* Slide-in Animation for Content */
+.animate-slide-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s ease-out forwards;
+}
+.delay-100 { animation-delay: 0.2s; }
+.delay-200 { animation-delay: 0.4s; }
+.delay-300 { animation-delay: 0.6s; }
+.delay-400 { animation-delay: 0.8s; }
+@keyframes slideIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Pulse Glow Animation for Button */
+.animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+}
+@keyframes pulseGlow {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); }
+    50% { transform: scale(1.02); box-shadow: 0 0 25px rgba(59, 130, 246, 0.5); }
+}
+/* Fade-in Animation for Headings */
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+/* Hover Effects */
+.group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+}
+.hover\:shadow-xl:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.hover\:shadow-md:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+
+
+.progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e5e7eb;
+    overflow: hidden;
+    position: relative;
+}
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+/* Ensure sidebar align */
+.sidebar {
+    position: relative;
+    width: 60px; /* Collapsed width */
+    height: 100vh;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+/* Ensure items stay in one line */
+.sidebar ul li a {
+display: flex;
+align-items: center;
+gap: 10px; /* Space between icon and text */
+white-space: nowrap; /* Prevent text from breaking into multiple lines */
+}
+
+/* Hide text initially */
+.txt {
+opacity: 0;
+width: 0;
+overflow: hidden;
+transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+/* When sidebar expands */
+.sidebar.expanded .txt {
+opacity: 1;
+width: auto;
+}
+.sidebar.open .txt {
+    opacity: 1;
+    width: auto;
+    }
+
+
+/* Expanded Sidebar */
+.sidebar.expanded {
+    width: 250px;
+}
+
+/* Mobile Sidebar (Initially Hidden) */
+@media (max-width: 1024px) {
+    .sidebar {
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        z-index: 1000;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+}
+
+.sidebar  .mobile-text{
+    color: black
+}
+.header-li{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-sidebar {
+       display: block;
+    }
+    
+}
