@@ -1,17 +1,15 @@
 <?php
 
+use App\Http\Controllers\frontend\tools\indexController;
 use Illuminate\Support\Facades\Route;
-
 Route::get('/', function () {
     return view('frontend.home');
 });
-Route::get('/tools', function () {
-    return view('frontend.tools.character-count');
-})->name('tools.character-count');
 
-Route::get('/qr-generator', function () {
-    return view('frontend.tools.qrcode');
-})->name('tools.qr-generator');
+Route::get('/tools',[indexController::class,'index'])->name('tools.home');
+Route::get('/character-count',[indexController::class,'character_count'])->name('tools.character-count');
+Route::get('/qr-generator',[indexController::class,'qr_generator'])->name('tools.qr-generator');
+
 
 Auth::routes();
 

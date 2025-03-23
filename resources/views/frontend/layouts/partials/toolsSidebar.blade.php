@@ -3,7 +3,7 @@
     <ul class="space-y-4">
         @hasSection('pagetitle')
         <li class="flex items-center space-x-3">
-            <a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200">
+            <a href="{{route('tools.home')}}" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200">
                 <i class="fas fa-home text-xl"></i>
                 <span class="txt"> Home</span>
             </a>
@@ -12,8 +12,24 @@
                 <i class="fas fa-lock-open text-xl desktop-icon"></i>
             </button>
         </li>
-        <li><a href="{{route('tools.character-count')}}" class="flex items-center space-x-3 text-blue-600 font-medium hover:text-blue-800 transition duration-200"><i class="fas fa-text-width text-xl"></i><span class="txt"> Character Counter</span></a></li>
-        <li><a href="{{route('tools.qr-generator')}}" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-qrcode text-xl"></i><span class="txt"> QR Code Generator</span></a></li>
+        <li>
+            <a href="{{ route('tools.character-count') }}" 
+               class="flex items-center space-x-3 transition duration-200 
+               {{ request()->routeIs('tools.character-count')  ? 'active-menu text-indigo-600' : 'text-gray-600 hover:text-blue-600' }}">
+                <i class="fas fa-text-width text-xl"></i>
+                <span class="txt">Character Counter</span>
+            </a>
+        </li>
+        
+        <li>
+            <a href="{{ route('tools.qr-generator') }}" 
+               class="flex items-center space-x-3 transition duration-200  
+               {{ request()->routeIs('tools.qr-generator') ? 'active-menu text-indigo-600' : 'text-gray-600 hover:text-blue-600' }}">
+                <i class="fas fa-qrcode text-xl"></i>
+                <span class="txt">QR Code Generator</span>
+            </a>
+        </li>
+        
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-link text-xl"></i><span class="txt"> URL Shortener</span></a></li>
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-image text-xl"></i><span class="txt"> Favicon Generator</span></a></li>
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-sticky-note text-xl"></i><span class="txt"> Notebook</span></a></li>

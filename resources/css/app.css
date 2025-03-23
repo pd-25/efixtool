@@ -151,3 +151,10 @@ width: auto;
     }
     
 }
+
+.sidebar.expanded  .active-menu {
+    background: #3858e826;
+    padding: 6px;
+    border-radius: 8px;
+    transition: left 0.3s ease-in-out;
+}
