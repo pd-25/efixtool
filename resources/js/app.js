@@ -1,4 +1,5 @@
 import './word-counter'
+import './qr-code'
 
 
 // sidebar 
