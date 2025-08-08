@@ -19,4 +19,16 @@ class indexController extends Controller
     public function qr_generator(){
         return view('frontend.tools.qrcode');
     }
+
+    public function favicon_generator(){
+        return view('frontend.tools.favicon-generator');
+    }
+
+    public function schemaTester(){
+        return view('frontend.tools.schema-tester');
+    }
+
+    public function schemaGenerator(){
+        return view('frontend.tools.schema-generator');
+    }
 }

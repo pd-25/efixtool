@@ -31,9 +31,31 @@
         </li>
         
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-link text-xl"></i><span class="txt"> URL Shortener</span></a></li>
-        <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-image text-xl"></i><span class="txt"> Favicon Generator</span></a></li>
+        <li>
+            <a href="{{ route('tools.favicon-generator') }}" 
+               class="flex items-center space-x-3 transition duration-200  
+               {{ request()->routeIs('tools.favicon-generator') ? 'active-menu text-indigo-600' : 'text-gray-600 hover:text-blue-600' }}">
+                <i class="fas fa-image text-xl"></i>
+                <span class="txt">Favicon Generator</span>
+            </a>
+        </li>
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-sticky-note text-xl"></i><span class="txt"> Notebook</span></a></li>
-        <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-code text-xl"></i><span class="txt"> Schema Tester</span></a></li>
+        <li>
+            <a href="{{ route('tools.schema-tester') }}" 
+               class="flex items-center space-x-3 transition duration-200  
+               {{ request()->routeIs('tools.schema-tester') ? 'active-menu text-indigo-600' : 'text-gray-600 hover:text-blue-600' }}">
+                <i class="fas fa-code text-xl"></i>
+                <span class="txt">Schema Tester</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('tools.schema-generator') }}" 
+               class="flex items-center space-x-3 transition duration-200  
+               {{ request()->routeIs('tools.schema-generator') ? 'active-menu text-indigo-600' : 'text-gray-600 hover:text-blue-600' }}">
+                <i class="fas fa-cogs text-xl"></i>
+                <span class="txt">Schema Generator</span>
+            </a>
+        </li>
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-tachometer-alt text-xl"></i><span class="txt"> Speed Test</span></a></li>
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-search text-xl"></i><span class="txt"> Website Audit</span></a></li>
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-sitemap text-xl"></i><span class="txt"> XML Sitemap</span></a></li>
@@ -43,5 +65,3 @@
         @endif
     </ul>
 </aside>
-
-

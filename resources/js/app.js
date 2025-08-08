@@ -1,5 +1,8 @@
 import './word-counter'
 import './qr-code'
+import './favicon-generator'
+import './schema-tester'
+import './schema-generator'
 
 
 // sidebar 

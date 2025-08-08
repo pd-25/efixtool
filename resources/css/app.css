@@ -85,7 +85,6 @@ h1, h2, h3 {
 .sidebar {
     position: relative;
     width: 60px; /* Collapsed width */
-    height: 100vh;
     background: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transition: width 0.3s ease-in-out;

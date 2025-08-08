@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\frontend\tools\indexController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.home');
@@ -9,6 +10,9 @@ Route::get('/', function () {
 Route::get('/tools',[indexController::class,'index'])->name('tools.home');
 Route::get('/character-count',[indexController::class,'character_count'])->name('tools.character-count');
 Route::get('/qr-generator',[indexController::class,'qr_generator'])->name('tools.qr-generator');
+Route::get('/favicon-generator',[indexController::class,'favicon_generator'])->name('tools.favicon-generator');
+Route::get('/schema-tester',[indexController::class,'schemaTester'])->name('tools.schema-tester');
+Route::get('/schema-generator',[indexController::class,'schemaGenerator'])->name('tools.schema-generator');
 
 
 Auth::routes();
