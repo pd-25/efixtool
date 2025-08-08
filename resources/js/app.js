@@ -3,6 +3,8 @@ import './qr-code'
 import './favicon-generator'
 import './schema-tester'
 import './schema-generator'
+import './xml-sitemap-generator'
+import './robots-txt-generator'
 
 
 // sidebar 

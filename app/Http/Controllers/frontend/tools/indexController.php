@@ -31,4 +31,8 @@ class indexController extends Controller
     public function schemaGenerator(){
         return view('frontend.tools.schema-generator');
     }
+
+    public function sitemapGenerator(){
+        return view('frontend.tools.xml-sitemap-generator');
+    }
 }

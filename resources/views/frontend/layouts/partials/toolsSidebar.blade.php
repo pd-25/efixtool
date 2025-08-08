@@ -30,7 +30,7 @@
             </a>
         </li>
         
-        <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-link text-xl"></i><span class="txt"> URL Shortener</span></a></li>
+        {{-- <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-link text-xl"></i><span class="txt"> URL Shortener</span></a></li> --}}
         <li>
             <a href="{{ route('tools.favicon-generator') }}" 
                class="flex items-center space-x-3 transition duration-200  
@@ -39,7 +39,7 @@
                 <span class="txt">Favicon Generator</span>
             </a>
         </li>
-        <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-sticky-note text-xl"></i><span class="txt"> Notebook</span></a></li>
+        {{-- <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-sticky-note text-xl"></i><span class="txt"> Notebook</span></a></li> --}}
         <li>
             <a href="{{ route('tools.schema-tester') }}" 
                class="flex items-center space-x-3 transition duration-200  
@@ -56,10 +56,25 @@
                 <span class="txt">Schema Generator</span>
             </a>
         </li>
+        <li>
+            <a href="{{ route('tools.sitemap-generator') }}"
+               class="flex items-center space-x-3 transition duration-200
+               {{ request()->routeIs('tools.sitemap-generator') ? 'active-menu text-indigo-600' : 'text-gray-600 hover:text-blue-600' }}">
+                <i class="fas fa-sitemap text-xl"></i>
+                <span class="txt">XML Sitemap</span>
+            </a>
+        </li>
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-tachometer-alt text-xl"></i><span class="txt"> Speed Test</span></a></li>
         <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-search text-xl"></i><span class="txt"> Website Audit</span></a></li>
-        <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-sitemap text-xl"></i><span class="txt"> XML Sitemap</span></a></li>
-        <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-robot text-xl"></i><span class="txt"> Robots.txt</span></a></li>
+        {{-- <li><a href="#" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition duration-200"><i class="fas fa-sitemap text-xl"></i><span class="txt"> XML Sitemap</span></a></li> --}}
+        <li>
+            <a href="{{ route('tools.robots-txt-generator') }}"
+               class="flex items-center space-x-3 transition duration-200
+               {{ request()->routeIs('tools.robots-txt-generator') ? 'active-menu text-indigo-600' : 'text-gray-600 hover:text-blue-600' }}">
+                <i class="fas fa-robot text-xl"></i>
+                <span class="txt">Robots.txt</span>
+            </a>
+        </li>
         @else
         @include('frontend.layouts.partials.headerMenu')
         @endif
