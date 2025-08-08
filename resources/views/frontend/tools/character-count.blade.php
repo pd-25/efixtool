@@ -115,7 +115,68 @@
             </div>
         </div>
     </div>
+       <section class="mb-12 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-900">Why This Tool Exists</h2>
+            <p class="text-gray-700 leading-relaxed">It started with a personal need: crafting digital ad copy within strict character limits. Existing tools were slow and cluttered. As a digital marketer, I created a clean, fast, and feature-rich character counter tool that works seamlessly for everyone.</p>
+        </section>
 
+        <!-- How to Use Section (Accordion) -->
+        <section class="mb-12">
+            <button class="accordion-button w-full bg-gray-800 text-white p-4 rounded-t-lg text-left text-xl font-semibold">How to Use the Character Counter Tool</button>
+            <div class="accordion-content max-h-0 bg-white rounded-b-lg p-6">
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Type directly into the text box or paste your content.</li>
+                    <li>Instantly see character count, word count, space count, sentences, and reading time updated in real-time.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Features Section (Accordion) -->
+        <section class="mb-12">
+            <button class="accordion-button w-full bg-gray-800 text-white p-4 rounded-t-lg text-left text-xl font-semibold">Added Features</button>
+            <div class="accordion-content max-h-0 bg-white rounded-b-lg p-6">
+                <ol class="list-decimal list-inside text-gray-700">
+                    <li>Transform text to uppercase, lowercase, or capitalize with one click.</li>
+                    <li>Paste any URL to extract and analyze webpage text directly.</li>
+                    <li>Supports multiple languages for accurate character counts.</li>
+                    <li>Choose content types (e.g., meta title, meta description, social media posts) to stay within platform-specific limits.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Who Can Benefit Section -->
+        <section class="mb-12 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-900">Who Can Benefit?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-medium text-gray-900">Writers & Bloggers</h3>
+                    <p class="text-gray-700">Stay within limits for articles, bios, or summaries on platforms with strict constraints.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-medium text-gray-900">Students & Academics</h3>
+                    <p class="text-gray-700">Ensure essays and applications meet word or character count requirements.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-medium text-gray-900">Social Media Managers</h3>
+                    <p class="text-gray-700">Craft perfect tweets, Instagram captions, or Facebook posts within limits.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-medium text-gray-900">Marketers & Advertisers</h3>
+                    <p class="text-gray-700">Create ad copies that comply with Google Ads or Meta ad format limits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Character Count Matters Section -->
+        <section class="mb-12 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-900">Why Character Count Matters</h2>
+            <p class="text-gray-700 leading-relaxed">Character limits are standard across platforms like Twitter (X), SMS, Reddit, and meta descriptions. Real-time counts help you:</p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+                <li>Avoid content being cut off</li>
+                <li>Comply with platform restrictions</li>
+                <li>Communicate more effectively</li>
+            </ul>
+        </section>
 </div>
 
 
