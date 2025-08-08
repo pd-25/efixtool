@@ -35,4 +35,7 @@ class indexController extends Controller
     public function sitemapGenerator(){
         return view('frontend.tools.xml-sitemap-generator');
     }
+      public function robotsTxtGenerator(){
+        return view('frontend.tools.robots-txt-generator');
+    }
 }

@@ -15,7 +15,7 @@ Route::get('/favicon-generator',[indexController::class,'favicon_generator'])->n
 Route::get('/schema-tester',[indexController::class,'schemaTester'])->name('tools.schema-tester');
 Route::get('/schema-generator',[indexController::class,'schemaGenerator'])->name('tools.schema-generator');
 Route::get('/xml-sitemap-generator',[indexController::class,'sitemapGenerator'])->name('tools.sitemap-generator');
-Route::get('/robots-txt-generator',[RobotsTxtController::class,'index'])->name('tools.robots-txt-generator');
+Route::get('/robots-txt-generator',[indexController::class,'robotsTxtGenerator'])->name('tools.robots-txt-generator');
 
 
 Auth::routes();
